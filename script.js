@@ -16,7 +16,7 @@ let highInFahrenheit = 0;
 let isCelsius = true;
 
 function convertTemperature(temp) {
-    return isCelsius ? Math.round((temp - 32) * 5 / 9) : temp;
+    return Math.round(isCelsius ? (temp - 32) * 5 / 9 : temp);
 }
 
 navigator.geolocation.getCurrentPosition(pos => {
